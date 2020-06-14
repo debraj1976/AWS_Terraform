@@ -1,0 +1,34 @@
+Install aws-cli in ubuntu:::::
+1.sudo apt install python3.7
+2.python3.7 --version
+3.sudo apt-get install python3-pip
+4.sudo apt-get install awscli
+5.aws --version
+
+configuring aws-cli:::
+1.aws configure
+2.acccess key:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+3.secret key:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+4.region:xxxxxxxxxxxxxxxxxxxxxxxxxx
+5.output:xxxxxxxxxxxxxxxxxxxxxxxx
+NOTE:::::::::::Dont share access key and secret key to others.............
+
+For checking aws-cli::::::::;
+1.aws s3 ls
+
+
+terraform installation in ubuntu::::
+1.sudo apt-get update
+2.sudo apt-get upgrade
+3.curl -O https://releases.hashicorp.com/terraform/0.12.25/terraform_0.12.25_linux_amd64.zip
+4.unzip -n terraform_0.12.25_linux_amd64.zip -d $HOME/
+5.sudo mv $HOME/terraform /usr/local/bin/
+6.terraform --version
+
+
+For checking terraform::
+1.create .tf files
+2.terraform init----->initializing plugins and moduukes
+3.terraform plan----->It will show what we are creating from .tf files in the perticular folder
+4.terraform apply---->It will create and change resources
+5.terraform destroy--->It will destroy the resources
